@@ -1,5 +1,27 @@
-/* Jumbotron */
-.jumbotron {
-  padding: 2rem 1rem;
+.navbar {
   background-color: #60686a;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #719192;
+}
+
+#about {
+  padding-top: 2rem;
+  background-color: #c1d0b5;
+}
+
+#project {
+  padding-top: 2rem;
+  background-color: #719192;
+}
+
+#contact {
+  padding-top: 2rem;
+  background-color: #c1d0b5;
+}
+
+section {
+  padding-top: 10rem;
 }
