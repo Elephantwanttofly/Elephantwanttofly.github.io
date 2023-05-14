@@ -1,3 +1,7 @@
+.body {
+  min-height: 3000px;
+}
+
 .navbar {
   background-color: #60686a;
 }
@@ -8,17 +12,16 @@
 }
 
 #about {
-  padding-top: 2rem;
   background-color: #c1d0b5;
+  text-align: justify;
 }
 
 #project {
-  padding-top: 2rem;
   background-color: #719192;
+  text-align: justify;
 }
 
 #contact {
-  padding-top: 2rem;
   background-color: #c1d0b5;
 }
 
