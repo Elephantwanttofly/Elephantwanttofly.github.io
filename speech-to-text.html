@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link href="img/logo-title.png" rel="shortcut icon" class="rounded-circle" />
+    <title>Speech to Text</title>
+    <link href="style-v2.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <br id="tools">
+                <h2>Speech to text change</h2>
+                <p>Klik tombol untuk Mulai Berbicara..</p>
+                <p>
+
+                </p>
+                <textarea id="output" readonly rows="2" style="width: 400px; resize: none;" disabled></textarea><br>
+
+                <script src="responsive_voice.js"></script>
+                <button class="klik" type="button" onclick="runSpeechRecognition()">Klik</button> &nbsp; <span
+                    id="action"></span>
+                <button class="ref" name="Refresh" style="margin-right: 5px; margin-left: -9px;"
+                    onclick="refreshPage()">Refresh</button>
+                <script>
+                    function refreshPage() {
+                        location.reload();
+                    }
+                </script>
+                <button class="back" name="Kembali" style="margin-right: 5px; margin-left: -5px;" onclick="goBack()">Go
+                    Back
+                    <script>
+                        function goBack() {
+                            window.history.back();
+                        }
+                    </script>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

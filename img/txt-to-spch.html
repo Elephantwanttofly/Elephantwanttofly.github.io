@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text-to-Speech</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+</head>
+
+<body>
+    <h1>Text-to-Speech</h1>
+
+    <textarea id="text-to-read" rows="4" cols="50"
+        placeholder="Masukkan teks yang ingin diubah menjadi ucapan"></textarea>
+    <br>
+    <button onclick="speak()">Baca</button>
+
+    <script>
+        function speak() {
+            var text = document.getElementById("text-to-read").value;
+            responsiveVoice.speak(text, 'Indonesian Male');
+        }
+    </script>
+</body>
+
+</html>

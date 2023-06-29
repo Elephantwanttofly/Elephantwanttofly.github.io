@@ -1,0 +1,66 @@
+.body {
+  min-height: 3000px;
+}
+
+.navbar {
+  background-color: #60686a;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #719192;
+}
+
+#about {
+  background-color: #c1d0b5;
+  text-align: justify;
+}
+
+#project {
+  background-color: #719192;
+  text-align: justify;
+}
+
+#contact {
+  background-color: #c1d0b5;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.story-gradient {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #5851db, #833ab4, #c13584);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Styling tambahan untuk tampilan */
+.story-gradient {
+  background: linear-gradient(50deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #5851db, #833ab4, #c13584);
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+}

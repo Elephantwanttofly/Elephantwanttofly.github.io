@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Speech-to-Text</title>
+    <script src="https://unpkg.com/recognition-api/dist/recognition-api.js"></script>
+    <script src="https://unpkg.com/google-search-api/dist/google-search-api.js"></script>
+</head>
+
+<body>
+    <h1>Speech-to-Text</h1>
+
+    <button onclick="startListening()">Mulai Mendengarkan</button>
+    <button onclick="stopListening()">Berhenti Mendengarkan</button>
+    <br><br>
+    <p id="speech-text"></p>
+    <button onclick="searchOnGoogle()">Cari di Google</button>
+
+    <script>
+        const recognition = new recognitionAPI.SpeechRecognition();
+        recognition.lang = 'id-ID';
+
+        recognition.onresult = (event) => {
+            const speechText = event.results[0][0].transcript;
+            document.getElementById("speech-text").textContent = speechText;
+        };
+
+        function startListening() {
+            recognition.start();
+        }
+
+        function stopListening() {
+            recognition.stop();
+        }
+
+        function searchOnGoogle() {
+            const speechText = document.getElementById("speech-text").textContent;
+            const searchQuery = `https://www.google.com/search?q=${encodeURIComponent(speechText)}`;
+            window.open(searchQuery, "_blank");
+        }
+    </script>
+</body>
+
+</html>
